@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive rating component | Jose Eduardo </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload, son los elementos que deben cargar lo antes posible-->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/normalize.css" as="style">
+
+  <link rel="stylesheet" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/spinner.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" as="font">
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="contenedor">
+    <main>
+      <div id = 'rating-vand'>
+        <header class="header">
+          <div class="icon">
+            <div class="icon-image"></div>
+          </div>
+        </header>
+
+        <section class="description">
+          <h1 class="description-title">How did we do? </h1>
+          <p class="description-content">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+        </section>
+      
+      
+
+        <div class="rating " >
+          <ol class="rating-list">
+            <li class="rating-number" value= 1 >1</li>
+            <li class="rating-number" value = 2 >2</li>
+            <li class="rating-number" value=3 >3</li>
+            <li class="rating-number" value = 4>4</li>
+            <li class="rating-number"  value = 5>5</li>
+          </ol>
+        </div>
+
+        <div class="button">
+          <button id="button-submit" type="submit" class="submit">SUBMIT</button>
+        </div>
+      </div>
+
+      <div class="sk-circle disabled">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+
+ 
+
+
+      <div id = 'result-vand' class="disabled">
+        <section class="result">
+          <div class="result-image"></div>
+          <h3 class="result-score"> You selected <span id="score-score"> </span> out of 5</h3> 
+        
+          <h2 class="result-title">  Thank you! </h2>
+          <p class="result-text">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
